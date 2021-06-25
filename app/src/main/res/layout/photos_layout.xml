@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:backgroundTint="#E5F8DE"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+        <ImageView
+            android:id="@+id/iv_propic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            tools:src="@color/black" />
+
+        <TextView
+            android:id="@+id/alid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_propic"
+            android:text="@string/album_id"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/albm_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/alid"
+            android:textSize="16sp"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/idd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alid"
+            android:layout_toRightOf="@+id/iv_propic"
+            android:text="@string/id"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/albm_id"
+            android:layout_toRightOf="@+id/idd"
+            android:textSize="20sp"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/ttl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id"
+            android:layout_toRightOf="@+id/iv_propic"
+            android:text="@string/title"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id"
+            android:layout_toRightOf="@+id/ttl"
+            android:textSize="20sp"
+            tools:text="accusamus beatae ad facilis cum similique qui sunt" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
